@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UtilityKit.Components.Pel.Application.Settings\UtilityKit.Components.Pel.Application.Settings.csproj" />
+    <ProjectReference Include="..\UtilityKit.Components.Pel.Domain.SharedKernel\UtilityKit.Components.Pel.Domain.SharedKernel.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="G2Kit.Components.Identity.Core">
+      <HintPath>..\lib\G2Kit.Components.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="G2Kit.Core.Mapper">
+      <HintPath>..\lib\G2Kit.Core.Mapper.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Applications\ATL\24-5-2023\" />
+    <Folder Include="Applications\ATL\25-5-2023\" />
+    <Folder Include="Applications\UND\24-5-2023\" />
+    <Folder Include="Applications\UND\25-5-2023\" />
+    <Folder Include="Entities\" />
+  </ItemGroup>
+
+</Project>
