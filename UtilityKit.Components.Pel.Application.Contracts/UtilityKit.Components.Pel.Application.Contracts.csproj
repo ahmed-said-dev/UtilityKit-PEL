@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\Crt_CADSchema\**" />
+    <EmbeddedResource Remove="Data\Crt_CADSchema\**" />
+    <None Remove="Data\Crt_CADSchema\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UtilityKit.Components.Pel.Application.Settings\UtilityKit.Components.Pel.Application.Settings.csproj" />
+    <ProjectReference Include="..\UtilityKit.Components.Pel.Domain.BusinessModel\UtilityKit.Components.Pel.Domain.BusinessModel.csproj" />
+    <ProjectReference Include="..\UtilityKit.Components.Pel.Domain.SharedKernel\UtilityKit.Components.Pel.Domain.SharedKernel.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="G2Kit.Components.Identity.Core">
+      <HintPath>..\lib\G2Kit.Components.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="G2Kit.Core.Mapper">
+      <HintPath>..\lib\G2Kit.Core.Mapper.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\NewFolder\" />
+    <Folder Include="NewFolder\" />
+    <Folder Include="Repository\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LinqToCsv" Version="1.5.0" />
+  </ItemGroup>
+</Project>
